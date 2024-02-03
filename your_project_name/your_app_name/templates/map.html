@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html>
-<body>
 {% load static %}
-<h1>The map and area elements</h1>
+<html>
+	<head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/your_app_name.css' %}">
+    </head>
+	<body>
+	
+	<h1><a href="/">The map and area elements</a></h1>
 
-<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
 
-<img src="{% static 'gr-04.jpg' %}" alt="gr-04" usemap="#workmap" width="780" height="585">
+	<img src="{% static 'gr-04.jpg' %}" alt="gr-04" usemap="#workmap" width="780" height="585">
 
-<map name="workmap">
-  <area target="_blank" alt="θεσσαλία" title="θεσσαλία" href="http://simpleblog2.pythonanywhere.com/region/Hi%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%AF%CE%B1/" coords="889,936,1348,607" shape="rect">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.ependyseis.gr/">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.agrotypos.gr/">
-</map>
+	<map name="workmap">
+	  <area target="_blank" alt="θεσσαλία" title="θεσσαλία" href="http://simpleblog2.pythonanywhere.com/region/Hi%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%AF%CE%B1/" coords="889,936,1348,607" shape="rect">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.ependyseis.gr/">
+	  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.agrotypos.gr/">
+	</map>
 
-</body>
+	</body>
 </html>
